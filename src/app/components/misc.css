@@ -1,0 +1,16 @@
+#eeLJ3NBQkhu4_tr {
+  animation: eeLJ3NBQkhu4_tr__tr 3000ms linear infinite normal forwards;
+}
+
+@keyframes eeLJ3NBQkhu4_tr__tr {
+  0% {
+    transform: translate(176.406544px, 173.893578px) rotate(0deg);
+  }
+  53.333333% {
+    transform: translate(176.406544px, 173.893578px) rotate(20deg);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  100% {
+    transform: translate(176.406544px, 173.893578px) rotate(0deg);
+  }
+}
