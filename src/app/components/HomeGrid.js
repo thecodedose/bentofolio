@@ -46,7 +46,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
     <animated.div className='grid grid-cols-1 lg:grid-cols-9 lg:grid-rows-9 w-screen lg:h-screen p-5 gap-5 bg-stone-200'>
       <animated.div
         style={animatedStyles}
-        className='row-start-4 lg:row-span-6 lg:col-span-3'
+        className='row-start-5 lg:row-span-6 lg:col-span-3'
       >
         <animated.div
           style={trails[1]}
@@ -80,7 +80,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       </animated.div>
       <animated.div
         style={animatedStyles}
-        className='lg:col-span-4 lg:row-span-3'
+        className='row-start-1 lg:col-span-4 lg:row-span-3'
       >
         <animated.div
           style={trails[0]}

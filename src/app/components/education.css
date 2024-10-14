@@ -1,0 +1,80 @@
+#eUbxc2KBHAG10_to {
+  animation: eUbxc2KBHAG10_to__to 4000ms linear infinite normal forwards;
+}
+@keyframes eUbxc2KBHAG10_to__to {
+  0% {
+    transform: translate(562.451659px, 9.317477px);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  50% {
+    transform: translate(521.864915px, 9.317414px);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  100% {
+    transform: translate(562.451659px, 9.317477px);
+  }
+}
+#eUbxc2KBHAG11_to {
+  animation: eUbxc2KBHAG11_to__to 4000ms linear infinite normal forwards;
+}
+@keyframes eUbxc2KBHAG11_to__to {
+  0% {
+    transform: translate(778.945551px, 21.607485px);
+  }
+  57.5% {
+    transform: translate(806.864911px, 21.607454px);
+  }
+  100% {
+    transform: translate(778.945551px, 21.607485px);
+  }
+}
+#eUbxc2KBHAG12_to {
+  animation: eUbxc2KBHAG12_to__to 4000ms linear infinite normal forwards;
+}
+@keyframes eUbxc2KBHAG12_to__to {
+  0% {
+    transform: translate(589.954996px, -52.830984px);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  60% {
+    transform: translate(637.781425px, -52.831047px);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  100% {
+    transform: translate(589.439707px, -52.830984px);
+  }
+}
+#eUbxc2KBHAG13_to {
+  animation: eUbxc2KBHAG13_to__to 4000ms linear infinite normal forwards;
+}
+@keyframes eUbxc2KBHAG13_to__to {
+  0% {
+    transform: translate(230.26124px, 42.040123px);
+    animation-timing-function: cubic-bezier(0.382302, 0, 0.894646, 0.823595);
+  }
+  51.5% {
+    transform: translate(274.356006px, 42.04008px);
+    animation-timing-function: cubic-bezier(0.65076, 0.641038, 1, 1);
+  }
+  52.5% {
+    transform: translate(275.636183px, 42.040079px);
+    animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
+  }
+  100% {
+    transform: translate(230.776528px, 42.040123px);
+  }
+}
+#eUbxc2KBHAG18_ts {
+  animation: eUbxc2KBHAG18_ts__ts 4000ms linear infinite normal forwards;
+}
+@keyframes eUbxc2KBHAG18_ts__ts {
+  0% {
+    transform: translate(227.5px, 169.75px) scale(1, 1);
+  }
+  52% {
+    transform: translate(227.5px, 169.75px) scale(0.5, 0.5);
+  }
+  100% {
+    transform: translate(227.5px, 169.75px) scale(1, 1);
+  }
+}
