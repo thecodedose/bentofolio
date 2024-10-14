@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { GRIDS } from "./constants"
 import { useTransition } from "@react-spring/web"
+import FollowingCursor from "./components/FollowingCursor"
 
 export default function Home() {
   const [currentGrid, setCurrentGrid] = useState(GRIDS[0])
@@ -14,6 +15,11 @@ export default function Home() {
 
   return transitions((style, item) => {
     const Grid = item.Component
-    return <Grid setCurrentGrid={setCurrentGrid} animatedStyles={style} />
+    return (
+      <>
+        <Grid setCurrentGrid={setCurrentGrid} animatedStyles={style} />
+        <FollowingCursor />
+      </>
+    )
   })
 }
