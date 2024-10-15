@@ -9,6 +9,36 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import "./contact.css"
 
+function BlackIconWrapper({ icon }) {
+  return (
+    <IconWrapper
+      icon={icon}
+      bgColor='bg-[#264653]'
+      textColor='text-[#E76F51]'
+    />
+  )
+}
+
+function RedIconWrapper({ icon }) {
+  return (
+    <IconWrapper
+      icon={icon}
+      bgColor='bg-[#E9C46A]'
+      textColor='text-[#2A9D8F]'
+    />
+  )
+}
+
+function IconWrapper({ icon, bgColor, textColor }) {
+  return (
+    <div
+      className={`w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20 ${bgColor} flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black`}
+    >
+      <FontAwesomeIcon icon={icon} className={textColor} />
+    </div>
+  )
+}
+
 export default function Contact() {
   return (
     <>
@@ -138,24 +168,12 @@ export default function Contact() {
         </svg>
       </div>
       <div className='grid grid-cols-3 gap-3 md:w-1/2'>
-        <div className='w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  bg-[#264653] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
-          <FontAwesomeIcon icon={faInstagram} className='text-[#E76F51]' />
-        </div>
-        <div className='w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  bg-[#E9C46A] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
-          <FontAwesomeIcon icon={faXTwitter} className='text-[#2A9D8F]' />
-        </div>
-        <div className='w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  bg-[#264653] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
-          <FontAwesomeIcon icon={faYoutube} className='text-[#E76F51]' />
-        </div>
-        <div className='w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  bg-[#E9C46A] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
-          <FontAwesomeIcon icon={faGithub} className='text-[#2A9D8F]' />
-        </div>
-        <div className='w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  bg-[#264653] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
-          <FontAwesomeIcon icon={faLinkedinIn} className='text-[#E76F51]' />
-        </div>
-        <div className='w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  bg-[#E9C46A] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
-          <FontAwesomeIcon icon={faEnvelope} className='text-[#2A9D8F]' />
-        </div>
+        <BlackIconWrapper icon={faInstagram} />
+        <RedIconWrapper icon={faXTwitter} />
+        <BlackIconWrapper icon={faYoutube} />
+        <RedIconWrapper icon={faLinkedinIn} />
+        <BlackIconWrapper icon={faLinkedinIn} />
+        <RedIconWrapper icon={faEnvelope} />
       </div>
     </>
   )
