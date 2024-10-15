@@ -12,7 +12,7 @@ import "./contact.css"
 export default function Contact() {
   return (
     <>
-      <div className='lg:w-1/2'>
+      <div className='md:w-1/2'>
         <svg id='ecfYqkDzjoQ1' viewBox='0 0 300 300' cached='true'>
           <rect
             width='180'
@@ -137,23 +137,23 @@ export default function Contact() {
           />
         </svg>
       </div>
-      <div className='grid grid-cols-3 gap-3'>
-        <div className='w-20 h-20  bg-[#264653] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
+      <div className='grid grid-cols-3 gap-3 md:w-1/2'>
+        <div className='w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  bg-[#264653] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
           <FontAwesomeIcon icon={faInstagram} className='text-[#E76F51]' />
         </div>
-        <div className='w-20 h-20  bg-[#E9C46A] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
+        <div className='w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  bg-[#E9C46A] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
           <FontAwesomeIcon icon={faXTwitter} className='text-[#2A9D8F]' />
         </div>
-        <div className='w-20 h-20  bg-[#264653] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
+        <div className='w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  bg-[#264653] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
           <FontAwesomeIcon icon={faYoutube} className='text-[#E76F51]' />
         </div>
-        <div className='w-20 h-20  bg-[#E9C46A] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
+        <div className='w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  bg-[#E9C46A] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
           <FontAwesomeIcon icon={faGithub} className='text-[#2A9D8F]' />
         </div>
-        <div className='w-20 h-20  bg-[#264653] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
+        <div className='w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  bg-[#264653] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
           <FontAwesomeIcon icon={faLinkedinIn} className='text-[#E76F51]' />
         </div>
-        <div className='w-20 h-20  bg-[#E9C46A] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
+        <div className='w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20  bg-[#E9C46A] flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black'>
           <FontAwesomeIcon icon={faEnvelope} className='text-[#2A9D8F]' />
         </div>
       </div>

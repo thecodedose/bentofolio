@@ -43,10 +43,10 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
   })
 
   return (
-    <animated.div className='grid grid-cols-1 lg:grid-cols-9 lg:grid-rows-9 w-screen lg:h-screen p-5 gap-5 bg-stone-200'>
+    <animated.div className='grid grid-cols-1 md:grid-cols-9 md:grid-rows-9 w-screen md:h-screen p-5 gap-5 bg-stone-200'>
       <animated.div
         style={animatedStyles}
-        className='row-start-5 lg:row-span-6 lg:col-span-3'
+        className='row-start-5 md:row-span-6 md:col-span-3'
       >
         <animated.div
           style={trails[1]}
@@ -57,7 +57,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       </animated.div>
       <animated.div
         style={animatedStyles}
-        className='lg:row-span-3 lg:col-span-3'
+        className='md:row-span-3 md:col-span-3'
       >
         <animated.div
           onClick={() => setCurrentGrid(GRIDS[1])}
@@ -69,7 +69,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       </animated.div>
       <animated.div
         style={animatedStyles}
-        className='lg:col-span-3 lg:row-span-3'
+        className='md:col-span-3 md:row-span-3'
       >
         <animated.div
           style={trails[2]}
@@ -80,7 +80,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       </animated.div>
       <animated.div
         style={animatedStyles}
-        className='row-start-1 lg:col-span-4 lg:row-span-3'
+        className='row-start-1 md:col-span-4 md:row-span-3'
       >
         <animated.div
           style={trails[0]}
@@ -93,7 +93,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
             </span>
           </div>
           <div className='border text-center border-neutral-900 bg-[#264653] w-fit px-5 py-2'>
-            <span className='lg:text-md'>
+            <span className='md:text-md'>
               {subheading.slice(0, subheadingIdx).join("")}
               <span className='inline-block w-3 h-0.5 mx-1 bg-[#2A9D8F] animate-pulse'></span>
             </span>
@@ -102,7 +102,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       </animated.div>
       <animated.div
         style={animatedStyles}
-        className='lg:row-span-4 lg:col-span-2'
+        className='md:row-span-4 md:col-span-2'
       >
         <animated.div
           style={trails[4]}
@@ -113,7 +113,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       </animated.div>
       <animated.div
         style={animatedStyles}
-        className='lg:row-span-3 lg:col-span-2'
+        className='md:row-span-3 md:col-span-2'
       >
         <animated.div
           style={trails[5]}
@@ -124,18 +124,18 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       </animated.div>
       <animated.div
         style={animatedStyles}
-        className='lg:row-span-3 lg:col-span-5'
+        className='md:row-span-3 md:col-span-5'
       >
         <animated.div
           style={trails[4]}
-          className='h-full w-full lg:flex justify-between items-center p-10 gap-5 bg-[#94d1ee] border border-black'
+          className='h-full w-full md:flex justify-between items-center p-10 gap-5 bg-[#94d1ee] border border-black'
         >
           <Contact />
         </animated.div>
       </animated.div>
       <animated.div
         style={animatedStyles}
-        className='lg:row-span-2 lg:col-span-2'
+        className='md:row-span-2 md:col-span-2'
       >
         <animated.div
           style={trails[6]}
