@@ -51,6 +51,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
         <animated.div
           style={trails[1]}
           className='relative bg-[#F4A261] border border-black h-full w-full'
+          onClick={() => setCurrentGrid(GRIDS[2])}
         >
           <WorkExperience />
         </animated.div>
@@ -87,7 +88,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
           className='h-full w-full p-10 bg-[#e9c46a] border border-black flex flex-col items-center justify-center gap-3'
         >
           <div className='border border-neutral-900 bg-[#264653]  w-fit px-5 py-3'>
-            <span className='text-5xl font-bold '>
+            <span className='text-5xl font-bold' id='home'>
               {name.slice(0, nameIdx).join("")}
               <span className='inline-block mx-2 w-6 h-1 bg-[#2A9D8F] animate-pulse'></span>
             </span>

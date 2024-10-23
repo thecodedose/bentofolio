@@ -13,7 +13,7 @@ const FollowingCursor = () => {
 
   const handleMouseMove = (e) => {
     cursorPositionRef.current = { x: e.clientX, y: e.clientY }
-    if (e.target.tagName === "H2") {
+    if (e.target.tagName === "H2" || e.target.id === "home") {
       cursorRef.current.style.height = "50px"
       cursorRef.current.style.width = "50px"
       innerRef.current.style.height = "30px"
@@ -80,7 +80,8 @@ const FollowingCursor = () => {
             backgroundColor: "#e9c46a",
             border: "1px solid #000000",
             pointerEvents: "none",
-            transition: "width 0.3s ease, height 0.3s ease-out, opacity 0.3s ease",
+            transition:
+              "width 0.3s ease, height 0.3s ease-out, opacity 0.3s ease",
           }}
           ref={innerRef}
         ></div>
