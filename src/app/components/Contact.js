@@ -9,33 +9,36 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import "./contact.css"
 
-function BlackIconWrapper({ icon }) {
+function BlackIconWrapper({ icon, ...rest }) {
   return (
     <IconWrapper
       icon={icon}
       bgColor='bg-[#264653]'
       textColor='text-[#E76F51]'
+      {...rest}
     />
   )
 }
 
-function RedIconWrapper({ icon }) {
+function RedIconWrapper({ icon, ...rest }) {
   return (
     <IconWrapper
       icon={icon}
       bgColor='bg-[#E9C46A]'
       textColor='text-[#2A9D8F]'
+      {...rest}
     />
   )
 }
 
-function IconWrapper({ icon, bgColor, textColor }) {
+function IconWrapper({ icon, bgColor, textColor, target, isEmail }) {
   return (
-    <div
+    <a
+      href={isEmail ? `mailto:${target}` : target}
       className={`w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20 ${bgColor} flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black`}
     >
       <FontAwesomeIcon icon={icon} className={textColor} />
-    </div>
+    </a>
   )
 }
 
@@ -168,12 +171,15 @@ export default function Contact() {
         </svg>
       </div>
       <div className='grid grid-cols-3 gap-3 md:w-1/2'>
-        <BlackIconWrapper icon={faInstagram} />
-        <RedIconWrapper icon={faXTwitter} />
-        <BlackIconWrapper icon={faYoutube} />
-        <RedIconWrapper icon={faLinkedinIn} />
-        <BlackIconWrapper icon={faLinkedinIn} />
-        <RedIconWrapper icon={faEnvelope} />
+        <BlackIconWrapper
+          icon={faInstagram}
+          target='https://www.instagram.com/thecodedose/'
+        />
+        <RedIconWrapper icon={faXTwitter} target="https://x.com/thecodedose" />
+        <BlackIconWrapper icon={faYoutube} target="https://www.youtube.com/channel/UCUqYu_GiAzFL4ErDEiK9xbA" />
+        <RedIconWrapper icon={faLinkedinIn} target="https://www.linkedin.com/in/ihsavru/" />
+        <BlackIconWrapper icon={faGithub} target="https://github.com/thecodedose"  />
+        <RedIconWrapper icon={faEnvelope} target="urvashi@thecodedose.com" isEmail />
       </div>
     </>
   )
